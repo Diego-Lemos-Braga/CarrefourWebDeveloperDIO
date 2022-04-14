@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-12 09:04:31 "/>
+        <attribute name="created" value="ZGllZ287RElFR09fREVMTDsyMDIyLTA0LTEyOyIwODo1MzoxOSAiOzI0NTg="/>
+        <attribute name="edited" value="ZGllZ287RElFR09fREVMTDsyMDIyLTA0LTEyOyIwOTowNDozMSAiOzE7MjU1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, soma" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="soma" expression="nota1+nota2+nota3+nota4"/>
+            <assign variable="media" expression="soma/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns voc&#234; foi aprovado&quot;" newline="True"/>
+                    <output expression="soma" newline="True"/>
+                    <output expression="media" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; foi reprovado&quot;" newline="True"/>
+                    <output expression="soma" newline="True"/>
+                    <output expression="media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
